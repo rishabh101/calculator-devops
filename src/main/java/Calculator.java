@@ -51,7 +51,7 @@ public class Calculator {
                     System.out.print("Enter the first number : ");
                     number1 = sc.nextDouble();
                     System.out.print("Enter the second number : ");
-                    number2 = scanner.nextDouble();
+                    number2 = sc.nextDouble();
                     System.out.println(number1+ " raised to power "+number2+" is : " + calculator.power(number1, number2));
                     System.out.println("\n");
                     break;
