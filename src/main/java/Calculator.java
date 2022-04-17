@@ -4,12 +4,11 @@
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 public class Calculator {
 
-    private static final Logger logger = LogManager.getLogger(Calculator.class);
+   
     public Calculator() {
     }
 
@@ -73,31 +72,31 @@ public class Calculator {
 
 
     public double factoral(double number1) {
-        logger.info("[FACTORIAL] - " + number1);
+       
         double res = fact(number1);
-        logger.info("[RESULT - FACTORIAL] - " + res);
+        
         return res;
     }
 
 
 
     public double sqroot(double number1) {
-        logger.info("[SQ ROOT] - " + number1);
+       
         double res1 = Math.sqrt(number1);
-        logger.info("[RESULT - SQ ROOT] - " + res1);
+       
         return res1;
     }
 
 
     public double power(double number1, double number2) {
-        logger.info("[POWER - " + number1 + " RAISED TO] " + number2);
+       
         double res2 = Math.pow(number1,number2);
-        logger.info("[RESULT - POWER] - " + res2);
+       
         return res2;
     }
 
     public double naturalLog(double number1) {
-        logger.info("[NATURAL LOG] - " + number1);
+        
         double res4 = 0;
         try {
 
@@ -111,7 +110,7 @@ public class Calculator {
         } catch (ArithmeticException error) {
             System.out.println("[EXCEPTION - LOG] - Cannot find log of negative numbers " + error.getLocalizedMessage());
         }
-        logger.info("[RESULT - NATURAL LOG] - " + res4);
+       
         return res4;
     }
     public double fact(double num) {
